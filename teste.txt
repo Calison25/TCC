@@ -1,0 +1,256 @@
+
+
+
+    
+    
+    
+
+
+    
+    
+    Random Forest-Based Evaluation of Raman Spectroscopy for Dengue Fever Analysis.  - PubMed - NCBI
+
+    
+    
+    
+		
+		    var ncbi_startTime = new Date();
+		
+		
+                
+                
+                
+            
+  
+    
+        
+
+
+
+var ObjectLinks=[{i:0, ename: "p$ExL", esid:"*", sname: "p$ExL", ssid:"*", dname:"p$el", dsid:"0",m:"CopyValue",p:[],f: function(src, dst) {fn_CopyValue(src, dst);}}]
+
+
+var ActiveNames = {"p$ExL":1, "EntrezSystem2.PEntrez.DbConnector.Cmd":0, "EntrezSystem2.PEntrez.DbConnector.Db":0, "EntrezSystem2.PEntrez.DbConnector.IdsFromResult":0, "EntrezSystem2.PEntrez.DbConnector.LastDb":0, "EntrezSystem2.PEntrez.DbConnector.LastIdsFromResult":0, "EntrezSystem2.PEntrez.DbConnector.LastQueryKey":0, "EntrezSystem2.PEntrez.DbConnector.LastTabCmd":0, "EntrezSystem2.PEntrez.DbConnector.LinkName":0, "EntrezSystem2.PEntrez.DbConnector.LinkReadableName":0, "EntrezSystem2.PEntrez.DbConnector.LinkSrcDb":0, "EntrezSystem2.PEntrez.DbConnector.QueryKey":0, "EntrezSystem2.PEntrez.DbConnector.TabCmd":0, "EntrezSystem2.PEntrez.DbConnector.Term":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_PageController.PreviousPageName":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_PageController.SpecialPageName":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.Answer":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.Email":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.EmailCount":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.EmailFormat":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.EmailHID":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.EmailQueryKey":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.EmailReport":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.EmailSort":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.EmailStart":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.EmailSubject":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.EmailText":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.Holding":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.HoldingFft":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.HoldingNdiSet":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.Key":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.OToolValue":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.QueryDescription":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.EmailTab.SubjectList":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.FFormat":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.FileFormat":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.FileSort":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.Format":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.LastFormat":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.LastPageSize":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.LastPresentation":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.LastSort":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.PageSize":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.Presentation":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.PrevPageSize":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.PrevPresentation":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.PrevSort":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.SendTo":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.SendToSubmit":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.SetDisplay":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.Sort":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_DisplayBar.sPresentation":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_ResultsController.ResultCount":0, "EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Pubmed_ResultsController.RunLastQuery":0};
+
+    
+    	
+			
+				
+					
+    
+    
+	
+	Warning:
+	The NCBI web site requires JavaScript to function. 
+	more...
+	
+	
+    
+    NCBISkip to main
+                        contentSkip to
+                        navigationResourcesAll ResourcesChemicals &amp; BioassaysBioSystemsPubChem BioAssayPubChem CompoundPubChem Structure SearchPubChem SubstanceAll Chemicals &amp; Bioassays Resources...DNA &amp; RNABLAST (Basic Local Alignment Search Tool)BLAST (Stand-alone)E-UtilitiesGenBankGenBank: BankItGenBank: SequinGenBank: tbl2asnGenome WorkbenchInfluenza VirusNucleotide DatabasePopSetPrimer-BLASTProSplignReference Sequence (RefSeq)RefSeqGeneSequence Read Archive (SRA)SplignTrace ArchiveUniGeneAll DNA &amp; RNA Resources...Data &amp; SoftwareBLAST (Basic Local Alignment Search Tool)BLAST (Stand-alone)Cn3DConserved Domain Search Service (CD Search)E-UtilitiesGenBank: BankItGenBank: SequinGenBank: tbl2asnGenome ProtMapGenome WorkbenchPrimer-BLASTProSplignPubChem Structure SearchSNP Submission ToolSplignVector Alignment Search Tool (VAST)All Data &amp; Software Resources...Domains &amp; StructuresBioSystemsCn3DConserved Domain Database (CDD)Conserved Domain Search Service (CD Search)Structure (Molecular Modeling Database)Vector Alignment Search Tool (VAST)All Domains &amp; Structures Resources...Genes &amp; ExpressionBioSystemsDatabase of Genotypes and Phenotypes (dbGaP)E-UtilitiesGeneGene Expression Omnibus (GEO) Database Gene Expression Omnibus (GEO) DatasetsGene Expression Omnibus (GEO) ProfilesGenome WorkbenchHomoloGeneMap ViewerOnline Mendelian Inheritance in Man (OMIM)RefSeqGeneUniGeneAll Genes &amp; Expression Resources...Genetics &amp; MedicineBookshelfDatabase of Genotypes and Phenotypes (dbGaP)Genetic Testing RegistryInfluenza VirusMap ViewerOnline Mendelian Inheritance in Man (OMIM)PubMedPubMed Central (PMC)PubMed Clinical QueriesRefSeqGeneAll Genetics &amp; Medicine Resources...Genomes &amp; MapsDatabase of Genomic Structural Variation (dbVar)GenBank: tbl2asnGenomeGenome ProjectGenome ProtMapGenome WorkbenchInfluenza VirusMap ViewerNucleotide DatabasePopSetProSplignSequence Read Archive (SRA)SplignTrace ArchiveAll Genomes &amp; Maps Resources...HomologyBLAST (Basic Local Alignment Search Tool)BLAST (Stand-alone)BLAST Link (BLink)Conserved Domain Database (CDD)Conserved Domain Search Service (CD Search)Genome ProtMapHomoloGeneProtein ClustersAll Homology Resources...LiteratureBookshelfE-UtilitiesJournals in NCBI DatabasesMeSH DatabaseNCBI HandbookNCBI Help ManualNCBI News &amp; BlogPubMedPubMed Central (PMC)PubMed Clinical QueriesPubMed HealthAll Literature Resources...ProteinsBioSystemsBLAST (Basic Local Alignment Search Tool)BLAST (Stand-alone)BLAST Link (BLink)Conserved Domain Database (CDD)Conserved Domain Search Service (CD Search)E-UtilitiesProSplignProtein ClustersProtein DatabaseReference Sequence (RefSeq)All Proteins Resources...Sequence AnalysisBLAST (Basic Local Alignment Search Tool)BLAST (Stand-alone)BLAST Link (BLink)Conserved Domain Search Service (CD Search)Genome ProtMapGenome WorkbenchInfluenza VirusPrimer-BLASTProSplignSplignAll Sequence Analysis Resources...TaxonomyTaxonomyTaxonomy BrowserTaxonomy Common TreeAll Taxonomy Resources...Training &amp; TutorialsNCBI Education PageNCBI HandbookNCBI Help ManualNCBI News &amp; BlogAll Training &amp; Tutorials Resources...VariationDatabase of Genomic Structural Variation (dbVar)Database of Genotypes and Phenotypes (dbGaP)Database of Single Nucleotide Polymorphisms (dbSNP)SNP Submission ToolAll Variation Resources...How ToAll How ToChemicals &amp; BioassaysDNA &amp; RNAData &amp; SoftwareDomains &amp; StructuresGenes &amp; ExpressionGenetics &amp; MedicineGenomes &amp; MapsHomologyLiteratureProteinsSequence AnalysisTaxonomyTraining &amp; TutorialsVariationAbout NCBI AccesskeysMy NCBISign in to NCBISign Out
+    
+    
+    
+    
+    PubMed
+    
+        US National Library of Medicine
+        National Institutes of Health
+    
+
+    
+    Search databasePubMedNucleotideAll DatabasesAssemblyBiocollectionsBioProjectBioSampleBioSystemsBooksClinVarCloneConserved DomainsdbGaPdbVarESTGeneGenomeGEO DataSetsGEO ProfilesGSSGTRHomoloGeneIdentical Protein GroupsMedGenMeSHNCBI Web SiteNLM CatalogNucleotideOMIMPMCPopSetProbeProteinProtein ClustersPubChem BioAssayPubChem CompoundPubChem SubstancePubMedPubMed HealthSNPSparcleSRAStructureTaxonomyToolKitToolKitAllToolKitBookToolKitBookghUniGeneSearch termSearchAdvancedHelp
+   
+    
+    
+    Result Filters
+    
+
+
+    
+        Format: AbstractFormatSummarySummary (text)AbstractAbstract (text)MEDLINEXMLPMID ListApplySend to
+                jQuery(document).ready( function () {
+                    jQuery("#send_to_menu input[type='radio']").click( function () {
+                        var selectedValue = jQuery(this).val().toLowerCase();
+                        var selectedDiv = jQuery("#send_to_menu div." + selectedValue);
+                        
+                        if(selectedDiv.is(":hidden")){ 
+                        jQuery("#send_to_menu div.submenu:visible").slideUp();
+                        selectedDiv.slideDown();
+                        }
+                    });
+                
+                });
+                
+                jQuery("#sendto").bind("ncbipopperclose", function(){
+                    jQuery("#send_to_menu div.submenu:visible").css("display","none");
+                    jQuery("#send_to_menu input[type='radio']:checked").attr("checked",false);
+                });
+                
+            Choose DestinationFileClipboardCollectionsE-mailOrderMy BibliographyCitation managerFormatSummary (text)Abstract (text)MEDLINEXMLPMID ListCSVCreate File1 selected item: 28862033FormatSummarySummary (text)AbstractAbstract (text)MEDLINEXMLPMID ListMeSH and Other DataE-mailSubjectAdditional textE-mailDidn't get the message? Find out why...Add to ClipboardAdd to CollectionsOrder articlesAdd to My BibliographyGenerate a file for use with external citation management software.Create File
+        
+    
+    
+    
+    
+    
+    
+    
+
+        
+            
+            
+               
+        
+            
+            
+            
+            
+        
+        See comment in PubMed Commons belowAppl Spectrosc. 2017 Sep;71(9):2111-2117. doi: 10.1177/0003702817695571. Epub  2017 Mar 17.Random Forest-Based Evaluation of Raman Spectroscopy for Dengue Fever Analysis.Khan S1, Ullah R1, Khan A2, Sohail A2, Wahab N2, Bilal M1,3, Ahmed M1.Author information11 Agri-biophotonics Laboratory, National Institute for Lasers &amp; Optronics, Islamabad, Pakistan.22 Department of Computer and Informatics Sciences, Pakistan Institutes of Engineering and Applied Sciences, Islamabad, Pakistan.33 Department of Physics and Applied Mathematics, Pakistan Institutes of Engineering and Applied Sciences, Islamabad, Pakistan.AbstractThis work presents the evaluation of Raman spectroscopy using random forest (RF) for the analysis of dengue fever in the infected human sera. A total of 100 dengue suspected blood samples, collected from Holy Family Hospital, Rawalpindi, Pakistan, have been used in this study. Out of these samples, 45 were dengue-positive based on immunoglobulin M (IgM) capture enzyme-linked immunosorbent assay (ELISA) tests. For highlighting the spectral differences between normal and infected samples, an effective machine learning system is developed that automatically learns the pattern of the shift in spectrum for the dengue compared to normal cases and thus is able to predict the unknown class based on the known example. In this connection, dimensionality reduction has been performed with the principal component analysis (PCA), while RF is used for automatic classification of dengue samples. For the determination of diagnostic capabilities of Raman spectroscopy based on RF, sensitivity, specificity, and accuracy have been calculated in comparison to normally performed IgM capture ELISA. According to the experiment, accuracy of 91%, sensitivity of 91%, and specificity of 91% were achieved for the proposed RF-based model.KEYWORDS: IgM; RF; Raman spectroscopy; dengue fever; immunoglobulin M; random forestPMID: 28862033  DOI: 10.1177/0003702817695571 SharePubMed Commons home
+                               PubMed Commons
+                               0 commentsHow to join PubMed CommonsHow to cite this comment:
+        
+            
+        
+        
+            
+            
+        
+        
+    
+  
+
+    Supplemental Content
+      
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+    You are here: 
+            NCBI &gt; Literature &gt; PubMed
+    Support Center
+    
+
+
+    
+    
+    
+        Simple NCBI Directory
+        
+            Getting Started
+            
+            NCBI Education
+            NCBI Help Manual
+            NCBI Handbook
+            Training &amp; Tutorials
+            Submit Data
+        
+        
+        
+            Resources
+            
+        Chemicals &amp; BioassaysData &amp; SoftwareDNA &amp; RNADomains &amp; StructuresGenes &amp; ExpressionGenetics &amp; MedicineGenomes &amp; MapsHomologyLiteratureProteinsSequence AnalysisTaxonomyVariation
+        
+        
+            Popular
+            PubMed
+            Bookshelf
+            PubMed Central
+            PubMed Health
+            BLAST            
+            Nucleotide
+            Genome
+            SNP
+            Gene
+            Protein
+            PubChem
+        
+        
+            Featured
+            Genetic Testing Registry
+            PubMed Health
+            GenBank
+            Reference Sequences
+            Gene Expression Omnibus
+            Map Viewer
+            Human Genome
+            Mouse Genome
+            Influenza Virus
+            Primer-BLAST
+            Sequence Read Archive
+        
+        
+            NCBI Information
+            About NCBI
+            Research at NCBI
+            NCBI News &amp; Blog
+            NCBI FTP Site
+            NCBI on Facebook
+            NCBI on Twitter
+            NCBI on YouTube
+        
+    
+    
+        External link. Please review our privacy policy.
+        
+          
+        
+            
+                NLM
+            
+            
+                NIH
+            
+            
+                DHHS
+            
+            
+                USA.gov
+                     
+        
+        
+        
+            
+                
+                    National Center for
+                        Biotechnology Information,
+                 U.S. National Library of Medicine
+                
+                    8600 Rockville Pike, Bethesda
+                    MD, 20894
+                    USA
+                
+            
+            
+            Policies and Guidelines | Contact
+        
+    
+         
+     
+
+
+
+					
+				
+			
+		
+    
+
+
+
+
+

@@ -1,5 +1,8 @@
 {
     "require": {
-        "guzzlehttp/guzzle": "~6.0"
+        "guzzlehttp/guzzle": "~6.0",
+        "spatie/pdf-to-text": "^1.0",
+        "asika/pdf2text": "^1.0",
+        "smalot/pdfparser": "*"
     }
 }
