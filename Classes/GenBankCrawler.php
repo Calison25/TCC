@@ -9,41 +9,61 @@ class GenBankCrawler
 
     const DEFAULT_URL = 'https://www.ncbi.nlm.nih.gov/';
 
+    const DOWNLOAD_URL = 'https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?tool=portal&save=file&log$=seqview&db=nuccore&report=xml&query_key=1&filter=all&sort=ACCN';
+
+    const PUBMED_URL = 'https://www.ncbi.nlm.nih.gov/pubmed/';
+
     public function __construct()
     {
         $cookie = new CookieJar();
         $ids = [];
         $filename = 'teste.pdf';
+        $searchType = 'nuccore';
+        $searchTerms = 'zika';
 
-        // instancia pro client
-//        $client = new Client(['cookies' => $cookie, 'verify' => false]);
-//
-//        $client->get(self::DEFAULT_URL.'genbank/');
-//
-//        $response = $client->get(self::DEFAULT_URL.'pubmed/?term=dengue');
-//
-//        $content = strip_tags($response->getBody()->getContents());
-//
-//        preg_match_all('/ID: \d+/', $content, $matches);
-//
-//        $ids = array_map(function($match){
-//        	return trim(str_replace('ID:', '', $match));
-//        }, $matches[0]);
-//
-//        $response = $client->get(self::DEFAULT_URL.'pubmed/'.$ids[0]);
-//
-//        file_put_contents('teste.txt', strip_tags($response->getBody()->getContents()));
-//
-//        $client->get('http://journals.sagepub.com/doi/10.1177/0022034517723325');
-//
-//        $response = $client->get('http://journals.sagepub.com/doi/pdf/10.1177/0022034517723325');
-//
-//        file_put_contents('teste.pdf', $response->getBody()->getContents());
+        // create a Client
+        $client = new Client(['cookies' => $cookie, 'verify' => false]);
+        $client->get(self::DEFAULT_URL);
 
-        $pdfContent = $this->getTextFromPdf($filename);
+        $client->get(self::DEFAULT_URL.$searchType.'/?term='.$searchTerms);
 
-//        file_put_contents('conteudoFinal.txt', $pdf->getText());
+        $headers = [
+            'Accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Encoding' => 'gzip, deflate, br',
+            'Accept-Language' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4',
+            'Connection' => 'keep-alive',
+            'Host' => 'www.ncbi.nlm.nih.gov',
+            'Referer' => self::DEFAULT_URL.$searchType.'/?term='.$searchTerms,
+            'Upgrade-Insecure-Requests' => '1',
+            'User-Agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+        ];
 
+        $form_params = [
+            'tool' => 'portal',
+            'save' => 'file',
+            'log$' => 'seqview',
+            'db' => $searchType,
+            'report' => 'xml',
+            'query_key' => '1',
+            'filter' => 'all',
+            'sort' => 'ACCN'
+        ];
+
+
+//        $response = $client->get(self::DOWNLOAD_URL, ['headers' => $headers, 'form_params' => $form_params]);
+//        file_put_contents('pubmed.txt',$response->getBody()->getContents());
+        $contentFile = file_get_contents('pubmed.txt');
+
+        preg_match_all('/<PubMedId>(\d+)/', $contentFile, $matches);
+
+      foreach ($matches[0] as $match){
+          $pubMedIds[] = $match;
+      }
+
+      $pubMedIds = array_unique($pubMedIds);
+
+
+//        $pdfContent = $this->getTextFromPdf($filename);
     }
 
     /**
