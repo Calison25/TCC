@@ -27,6 +27,7 @@ class GenBankCrawler
 
         $client->get(self::DEFAULT_URL.$searchType.'/?term='.$searchTerms);
 
+
         $headers = [
             'Accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
             'Accept-Encoding' => 'gzip, deflate, br',
@@ -54,16 +55,35 @@ class GenBankCrawler
 //        file_put_contents('pubmed.txt',$response->getBody()->getContents());
         $contentFile = file_get_contents('pubmed.txt');
 
-        preg_match_all('/<PubMedId>(\d+)/', $contentFile, $matches);
+      preg_match_all('/<PubMedId>(\d+)/', $contentFile, $matches);
+
 
       foreach ($matches[0] as $match){
           $pubMedIds[] = $match;
       }
 
-      $pubMedIds = array_unique($pubMedIds);
+      $pubMedIds = array_values(array_unique($pubMedIds));
 
+      $pubMedIds = array_map(function ($id){
+          return strip_tags($id);
+      },$pubMedIds);
 
-//        $pdfContent = $this->getTextFromPdf($filename);
+      $response = $client->get(self::PUBMED_URL.$pubMedIds[90]);
+
+      preg_match('/PMC\d{7}/', $response->getBody()->getContents(), $match);
+      $response = $client->get('https://www.ncbi.nlm.nih.gov/pmc/articles/'.$match[0
+          ]);
+
+      preg_match('/pdf\/(.*)\.pdf/',$response->getBody()->getContents(),$match);
+
+      $pdfName = $match[1];
+//        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5547780/pdf/16-2007.pdf
+      $response = $client->get('https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5547780/pdf/'.$pdfName.'.pdf');
+      file_put_contents('pdfFinal.pdf',$response->getBody()->getContents());
+      echo 'finalizou';
+      die;
+
+        //       $pdfContent = $this->getTextFromPdf($filename);
     }
 
     /**
